@@ -130,10 +130,11 @@ const zooAnimals = [
 The zoos want to display both the scientific name and the animal name in front of the habitats. Populate the displayNames array with only the animal_name and scientific_name of each animal. displayNames will be an array of strings, and each string should follow this pattern: "Name: Jackal, asiatic, Scientific: Canis aureus."
 
 */
-//const displayNames = [];
+const displayNames = [];
 
+zooAnimals.forEach(element => displayNames.push(`${element.animal_name} ${element.scientific_name}`));
 
-//console.log(displayNames);
+console.log(displayNames);
 
 /* Request 2: .map()
 
@@ -154,11 +155,10 @@ console.log(lowCaseAnimalNames);
 The zoos are concerned about animals with a lower population count. Using filter, create a new array of objects called lowPopulationAnimals which contains only the animals with a population less than 5.
 
 */
-//let lowPopulationAnimals = zooAnimals.filter(i) => {
-  //return i.population < 5;
-//};
+const lowPopulationAnimals = zooAnimals.filter(zooAnimals => zooAnimals.population < 5);
+;
 
-//console.log(lowPopulationAnimals);
+console.log(lowPopulationAnimals);
 
 /* Request 4: .reduce() 
 
