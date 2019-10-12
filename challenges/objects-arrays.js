@@ -141,10 +141,10 @@ The zoos need a list of all their animal's names (animal_name only) converted to
 
 const lowCaseAnimalNames = [];
 
-//const zooAnimals.map((animal)
-//animal.animal_name.toLowerCase());
+const zooAnimals.map((animal)
 
-//console.log(lowCaseAnimalNames);
+
+console.log(lowCaseAnimalNames);
 
 /* Request 3: .filter() 
 
